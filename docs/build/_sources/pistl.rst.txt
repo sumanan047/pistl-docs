@@ -4,14 +4,6 @@ pistl package
 Submodules
 ----------
 
-pistl.converter module
-----------------------
-
-.. automodule:: pistl.converter
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 pistl.core module
 -----------------
 

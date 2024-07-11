@@ -9,20 +9,26 @@ from . import pist_exceptions
 def stl_writer(filename: str, stl_name: str, triangles: list, facet_normals: list = []):
     """
     Description:
+    ============
         Generates a stl file provided the triangles and normal to the face.
+
     Parameters:
+    ===========
         filename - name of file to write to
         stl_anme
         facet_normals - num_triangles x 3 list of triangle normals
         triangles - List of triangles i.e. [T1, T2, T3],
-                    where, Ti is a trinagle that is a list of three points: [[p0], [p1], [p2]], 
-                    where, pi is a list of cordinates [x, y, z]
-                    or see below:
-                    num_triangles x 3 x 3 nested list: [ [ [p0], [p1], [p2] ] ... [ [p0], [p1], [p2] ] ]
+        where, Ti is a trinagle that is a list of three points: [[p0], [p1], [p2]], 
+        where, pi is a list of cordinates [x, y, z]
+        or see below:
+        num_triangles x 3 x 3 nested list: [ [ [p0], [p1], [p2] ] ... [ [p0], [p1], [p2] ] ]
+
     Returns:
+    =========
         .stl file
 
     Example:
+    ========
         >>> stl_writer('test.stl','tetra', [[[1, 0, 0], [0, 1, 0], [0, 0, 1]],
                                     [[1, 0, 0], [0, 1, 0], [0, 0, 0]]], 
                                     facet_normals=[[0.57,0.57,0.57],

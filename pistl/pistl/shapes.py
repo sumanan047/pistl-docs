@@ -236,10 +236,15 @@ class Cylinder(Shape):
     def create(self):
         """
         Description:
+        ============
             Creates a cylinder.
+
         Parmeters:
+        ==========
             None
+
         Example:
+        ========
         >>> cyl = Cylinder()
         >>> cyl._height = 10.00
         >>> cyl._top_circle_radius = 4.00

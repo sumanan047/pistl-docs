@@ -1,13 +1,12 @@
 import numpy as np
 from . import utilities
 """
-### Core module contains funcitions that can be used to translate, 
+Core module contains funcitions that can be used to translate, 
 twist and deform the stl shapes
-
 array structure:
 np.array([normal, v1, v2, v3])..keep concatenating next triangles
 The shape should be:
-    (4* number of triangles, 3)
+(4* number of triangles, 3)
 """
 
 
@@ -17,7 +16,7 @@ def stl_to_array(stl: str):
         Reads an stl file produced by pystl and converts that into a compact numpy array of the form:
         np.array([0,0,0], [normla, vertex..], ....all the triangles).
         The shape of the array then produced is:
-            4* number of traingles + 1 (first element is [0,0,0] in the array made for vstack to work.)
+        4* number of traingles + 1 (first element is [0,0,0] in the array made for vstack to work.)
     Parameters:
         stl:
             string filehandle for the shape.

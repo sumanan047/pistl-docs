@@ -1,14 +1,16 @@
-.. PISTL documentation master file, created by
-   sphinx-quickstart on Wed Jul 10 18:48:55 2024.
+.. pistl documentation master file, created by
+   sphinx-quickstart on Wed Jul 10 20:51:39 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PISTL's documentation!
+Welcome to pistl's documentation!
 =================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+
+   modules
+   tests
+   
 
 
 
