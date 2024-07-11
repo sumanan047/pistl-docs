@@ -5,3 +5,4 @@ pistl
    :maxdepth: 4
 
    pistl
+   tests
