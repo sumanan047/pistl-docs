@@ -23,7 +23,6 @@ trame = "3.3.0"
 trame-vuetify = "2.3.1"
 trame-components = "2.2.1"
 vtk = "9.3.0"
-pip = "24.0.0"
 pistl = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
