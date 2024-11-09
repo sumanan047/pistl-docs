@@ -27,7 +27,19 @@ extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.napoleon',
 ]
+
+autosummary_generate = True
+
+autodoc_default_options = {
+    'members': True,
+    'private-members': True,
+    'special-members': True,
+    'undoc-members': True,
+    'show-inheritance': True,
+}
 
 templates_path = ['_templates']
 exclude_patterns = []
