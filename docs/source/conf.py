@@ -15,9 +15,14 @@ release = '2023'
 
 import pistl
 
+def auto_doc_module():
+    """Automatically generate the .rst files for the pistl package."""
+    import subprocess
 
+    module_path = os.path.dirname(pistl.__file__)
+    subprocess.call(f'sphinx-apidoc -o . {module_path}', shell=False)
 
-
+auto_doc_module()
 
 master_doc = 'index'
 # -- General configuration ---------------------------------------------------
