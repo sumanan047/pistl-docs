@@ -9,8 +9,7 @@ Welcome to pistl's documentation!
 .. toctree::
 
    modules
-   tests
-   
+
 
 
 
