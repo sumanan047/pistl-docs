@@ -7,6 +7,7 @@ Welcome to pistl's documentation!
 =================================
 
 .. toctree::
+   :maxdepth: 3
 
    modules
 
