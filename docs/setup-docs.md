@@ -24,7 +24,12 @@ docker build -t pistl-docs:latest .
 
 Test the docs build by running the container in detached mode and using the current directory as source.
 ```commandline
-docker run --rm -p 8000 -d pistl-docs:latest
+docker run --rm -p 8000 -d --name pistl-docs pistl-docs:latest
+```
+
+Copy the build file from the container
+```commandline
+docker cp pistl-docs:/pistl-docs/docs/build ./docs/build
 ```
 
 <blockquote>
