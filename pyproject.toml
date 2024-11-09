@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pistl"
+name = "pistl-docs"
 version = "1.2.0"
 description = "Python library to generate STL format files for common shapes and geometries."
 license = "MIT"
