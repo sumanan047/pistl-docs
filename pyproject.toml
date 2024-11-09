@@ -16,13 +16,13 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
-numpy = "1.26.2"
+numpy = "^1.26.2"
 pyvista = {version = ">=0.38.1", extras = ["jupyter"]}
 ipykernel = "6.27.1"
-trame = "3.3.0"
-trame-vuetify = "2.3.1"
-trame-components = "2.2.1"
-vtk = "9.3.0"
+trame = "^3.3.0"
+trame-vuetify = "^2.3.1"
+trame-components = "^2.2.1"
+vtk = "^9.3.0"
 pistl = "^1.2.0"
 
 [tool.poetry.group.dev.dependencies]
