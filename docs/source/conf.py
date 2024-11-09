@@ -13,8 +13,11 @@ copyright = '2024, Suman Saurabh'
 author = 'Suman Saurabh'
 release = '2023'
 
-print(os.path.abspath('../../pistl'))
-sys.path.insert(0, os.path.abspath('../../pistl'))
+import pistl
+
+
+
+
 
 master_doc = 'index'
 # -- General configuration ---------------------------------------------------
