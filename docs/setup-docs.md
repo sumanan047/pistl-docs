@@ -16,3 +16,21 @@ Build the docs with `sphinx-build` from scratch
 sphinx-build -b html docs/source docs/build
 ```
 
+### 2.0 Build the docs in a Docker environment
+
+```commandline
+docker build -t pistl-docs:latest .
+```
+
+Test the docs build by running the container in detached mode and using the current directory as source.
+```commandline
+docker run --rm -v .:/pistl-docs -p 8000 -d pistl-docs:latest
+```
+
+<blockquote>
+Debug the container by running bash inside of it and mounting the current directory to the container to run commands
+
+```commandline
+docker run --rm -v .:/pistl-docs -p 8000 -it pistl-docs:latest bash
+```
+</blockquote>
