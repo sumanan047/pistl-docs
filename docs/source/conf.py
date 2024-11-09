@@ -24,6 +24,15 @@ def auto_doc_module():
 
 auto_doc_module()
 
+def get_version():
+    """Retrieve the version from the pistl package."""
+    return pistl.__version__
+try:
+    version = get_version()
+    release = version
+except Exception as e:
+    print(e)
+
 master_doc = 'index'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
