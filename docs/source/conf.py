@@ -20,7 +20,7 @@ def auto_doc_module():
     import subprocess
 
     module_path = os.path.dirname(pistl.__file__)
-    subprocess.call(f'sphinx-apidoc -o . {module_path}', shell=False)
+    subprocess.call(f'sphinx-apidoc -o . {module_path}', shell=True)
 
 auto_doc_module()
 
